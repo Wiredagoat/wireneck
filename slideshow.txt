@@ -1,0 +1,297 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green is the new black</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgb(34, 149, 34);
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            color: black;
+            margin: 0;
+        }
+        .subheading {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .article {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: rgb(34, 149, 34);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        .contact-form input[type="submit"] {
+            background-color: rgb(58, 158, 221);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: rgb(0, 0, 0);
+        }
+
+        /* Menu Styles */
+        .menu {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            header {
+                padding: 10px;
+            }
+            footer {
+                padding: 5px;
+            }
+            .menu {
+                position: relative;
+                top: auto;
+                left: auto;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Green is the new black</h1>
+        <div class="menu">
+            <a href="#nature">Nature</a>
+            <a href="#indoor-plants">Indoor Plants</a>
+            <a href="#about-us">About Us</a>
+			 <a href="#wysd">WYSD</a>
+            <a href="#contact-us">Contact Us</a>
+        </div>
+        <div class="subheading">Bringing Nature Closer to Urban Living</div>
+    </header>
+    <div class="container">
+        <div class="article" id="nature">
+            <h2>Nature</h2>
+            <h3>Royal Botanic Garden Edinburgh</h3>
+            <img src="royalbotanic.jpg" width="500" height="100" alt="Vertical Garden">
+            <p>The Royal Botanic Garden Edinburgh (RBGE) is a world-renowned center for plant science, horticulture, and education. Located in Edinburgh, Scotland, it covers an area of over 70 acres and is home to an extensive collection of plants from around the world. The garden serves as both a tourist attraction and a research institution, playing a vital role in the conservation and study of plant biodiversity.Its mission includes the conservation of plant species, the advancement of botanical knowledge through research, and the promotion of environmental awareness and education. The garden's diverse collections include alpine plants, tropical palms, orchids, and many more, cultivated across various themed areas and glasshouses..</p>
+        </div>
+		<div class="article" id="nature">
+    <h2>Nature</h2>
+    <h3>Royal Botanic Garden Edinburgh</h3>
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="royalbotanic1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="royalbotanic2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="royalbotanic3.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <p>The Royal Botanic Garden Edinburgh (RBGE) is a world-renowned center for plant science, horticulture, and education. Located in Edinburgh, Scotland, it covers an area of over 70 acres and is home to an extensive collection of plants from around the world. The garden serves as both a tourist attraction and a research institution, playing a vital role in the conservation and study of plant biodiversity. Its mission includes the conservation of plant species, the advancement of botanical knowledge through research, and the promotion of environmental awareness and education. The garden's diverse collections include alpine plants, tropical palms, orchids, and many more, cultivated across various themed areas and glasshouses.</p>
+</div>
+
+<style>
+    /* Slideshow Styles */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* The dots/circles */
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+
+    /* Fade animation for slides */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+</style>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+        <div class="article" id="indoor-plants">
+            <h3>Indoor Plants</h3>
+            <img src="indoor-plants.jpg" alt="Indoor Plants">
+            <p>Indoor plants not only add beauty to your home but also improve air quality and reduce stress levels. Low-cost options include spider plants, pothos, and snake plants.</p>
+        </div>
+		
+        
+
+        <div class="article" id="about-us">
+            <h2>About Us</h2>
+            <p>We are a team passionate about bringing the benefits of nature to urban communities. Our mission is to provide practical and affordable solutions for incorporating greenery into urban living spaces.</p>
+        </div>
+
+
+		<div class="article" id="wysd">
+            <h2>What You Should do!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque, ex vel viverra ultrices, massa justo porta odio, eu convallis mauris tortor sit amet ex. Nam vitae odio ut enim rhoncus tincidunt.</p>
+        </div>
+		
+        <div class="article" id="contact-us">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form action="mailto:2106797@cheadle.tcg.ac.uk" method="post" enctype="text/plain">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Nature in the City</p>
+    </footer>
+</body>
+</html>
